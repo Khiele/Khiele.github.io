@@ -51,7 +51,16 @@ td {
 
 }
 
-/*style the layout of the navbar */
+h4 {
+    text-align: center;
+    justify-content: space-between;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+/*style the layout of the navbar and using box model to space out content*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -61,7 +70,7 @@ td {
     border-radius: 10px;
     color: #ffffff;
     margin-bottom: 280px;
-    m
+
 }
 
 .nav-links a {
@@ -147,17 +156,21 @@ input[type=checkbox] {
 
     border-radius: 10px;
 
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 
 .contactinfo {
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 3px 30px;
 }
 
 /* intro paragraph spacing */
 .intro {
     text-align: justify;
 
-    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
