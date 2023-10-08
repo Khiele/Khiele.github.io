@@ -1,15 +1,38 @@
 /*resets the browsers styling and choose alt box model option */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.layout {
+    width: 1366px;
+    height: 768px;
+
+    display: grid;
+    grid:
+        "header" auto "main" 1fr "footer" auto / 1fr;
+    gap: 8px;
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+
 
 }
 
 
 body {
     font-family: cursive;
-    background-color: #8a3169;
+    background-image: url("../img/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: center;
 
 }
 
@@ -21,14 +44,24 @@ li {
     list-style: none;
 }
 
+table,
+th,
+td {
+    border: 1px solid white;
+
+}
+
 /*style the layout of the navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(208, 21, 186);
-    color: #d4cdbf
+    background-color: rgb(138, 126, 137);
+    border-radius: 10px;
+    color: #ffffff;
+    margin-bottom: 280px;
+    m
 }
 
 .nav-links a {
@@ -50,7 +83,7 @@ li {
 
 /*sudo class lists */
 .menu li:hover {
-    background-color: #f861c1;
+    background-color: #bfbcbe;
     border-radius: 5px;
     /*transition for hover of menu*/
     transition: 0.3s, ease-in;
@@ -72,7 +105,7 @@ input[type=checkbox] {
 }
 
 /*responsive design using CSS queries */
-@media (max-width: 786px; ) {
+@media (max-width: 786px) {
     .menu {
         display: none;
         position: absolute;
@@ -80,7 +113,7 @@ input[type=checkbox] {
         right: 0;
         left: 0;
         text-align: center;
-        padding: 16px 0;
+        padding: 16px;
 
     }
 
@@ -103,4 +136,28 @@ input[type=checkbox] {
     .hamburger {
         display: block;
     }
+
+}
+
+/* styling of footer and main content based off hero section design template */
+.page_footer {
+    color: #ffffff;
+    font-size: 18px;
+    background-color: rgba(144, 144, 150, 0.749);
+
+    border-radius: 10px;
+
+}
+
+.contactinfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+/* intro paragraph spacing */
+.intro {
+    text-align: justify;
+
+    padding-bottom: 10px;
 }
