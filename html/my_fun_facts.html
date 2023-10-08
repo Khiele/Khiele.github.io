@@ -15,18 +15,33 @@
 
 <body>
     <header id="page_header">
-        <div id="logocontainer">
-            <img src="../img/profile.jpg.png" alt="profile portfolio" height="75" width="75">
-            <span><strong>Some fun facts about me</strong></span>
-        </div>
-        <nav id="navbar">
-            <hr>
-            <a href="../index.html" class="navOption">Home</a>
-            <a href="./my_resume.html" class="navOption">My Resume</a>
-            <a href="./my_fun_facts.html" class="navOption">My Fun Facts</a>
-            <hr>
-        </nav>
+        <!--CSS file link-->
+        <link rel="stylesheet" href="../css/style.css" />
 
+        <!--Nav menu container-->
+        <nav id="navbar" class="navbar">
+
+            <!--logo container-->
+            <div id="logocontainer" class="logo">
+                <img src="../img/profile.jpg.png" alt="profile portfolio" height="75" width="75">
+                <span><strong>Resume</strong></span>
+            </div>
+
+            <ul class="nav-links">
+
+                <!--HAMBURGER menu checkbox-->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!--Nav Menu Options-->
+                <div class="menu">
+                    <li><a href="../index.html" class="navOption">Home</a></li>
+                    <li><a href="./my_resume.html" class="navOption">My Resume</a></li>
+                    <li> <a href="./my_fun_facts.html" class="navOption">My Fun Facts</a></li>
+
+                </div>
+            </ul>
+        </nav>
     </header>
 
     <!--Favorites Sections-->

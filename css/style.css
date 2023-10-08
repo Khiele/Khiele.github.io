@@ -1,0 +1,106 @@
+/*resets the browsers styling and choose alt box model option */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: cursive;
+    background-color: #8a3169;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*style the layout of the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(208, 21, 186);
+    color: #d4cdbf
+}
+
+.nav-links a {
+    color: #d4cdbf
+}
+
+/* styling of the logo */
+.logo {
+    font-size: 32px;
+}
+
+/*styling the menu */
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+/*sudo class lists */
+.menu li:hover {
+    background-color: #f861c1;
+    border-radius: 5px;
+    /*transition for hover of menu*/
+    transition: 0.3s, ease-in;
+}
+
+.menu li {
+    padding: 10px 40px;
+}
+
+/*hiding checkbox */
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/*responsive design using CSS queries */
+@media (max-width: 786px; ) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+
+    }
+
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: blanchedalmond;
+        transition: 0.3s, ease;
+
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
