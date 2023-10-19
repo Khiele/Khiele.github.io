@@ -1,176 +1,357 @@
-/*resets the browsers styling and choose alt box model option */
-
-.layout {
-    width: 1366px;
-    height: 768px;
-
-    display: grid;
-    grid:
-        "header" auto "main" 1fr "footer" auto / 1fr;
-    gap: 8px;
-
+/*styling of all h2 headers */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    grid-area: header;
-}
+/*CSS for section one */
+.titlePage {
 
-.main {
-    grid-area: main;
-}
+    height: 100vh;
+    width: 100vw;
 
-.footer {
-    grid-area: footer;
-
-
-}
-
-
-body {
-    font-family: cursive;
-    background-image: url("../img/background2.png");
+    background-image: url("../img/irelandHome.png");
+    padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: center;
-
+    background-position: center center;
 }
 
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-table,
-th,
-td {
-    border: 1px solid white;
-
-}
-
-h4 {
+.section1heading {
     text-align: center;
-    justify-content: space-between;
+    margin-top: 20%;
+    color: #008000;
+    font-size: 6em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h5 {
-    font-size: 20px;
+/*CSS layout for section 2 */
+.section2 {
+    height: 70vh;
+    width: 100vw;
+
+
+    /*Two column CSS layout */
+    display: grid;
+    grid:
+        "section2heading section2content" 1fr / 1fr 1fr;
+    gap: 8px;
+
+
+    background-image: url("../img/lighthouse.png");
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-/*style the layout of the navbar and using box model to space out content*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(138, 126, 137);
-    border-radius: 10px;
+.section2heading {
+    grid-area: section2heading;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 200px;
+    margin-left: 100px;
+    color: #008000;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section2content {
+    grid-area: section2content;
+    margin-top: 10px;
+    padding-right: 100px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #047913;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* Section 3 styling */
+.section3 {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("../img/flowers.png");
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.section3heading {
+    text-align: center;
+    margin-top: 10px;
+    color: #008000;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* setting the grid of the three pictures setting */
+.sect3grid {
+    display: grid;
+    grid:
+        "sect3col1 sect3col2 sect3col3" 0.7fr / 1fr 1fr 1fr;
+    gap: 0px 20px;
+}
+
+.sect3col1 {
+    width: 300px;
+    height: 400px;
+
+    background-image: url("../img/test1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-position: center center;
+
+    /*css box plot margin settings */
+    grid-area: sect3col1;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.sect3col2 {
+    width: 300px;
+    height: 400px;
+
+    background-image: url("../img/aurora.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+    /*css box plot margin settings */
+    grid-area: sect3col2;
+    margin-left: 75px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sect3col3 {
+
+    width: 300px;
+    height: 400px;
+
+    grid-area: sect3col3;
+    background-image: url("../img/city.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    /*css box plot margin settings */
+    margin-right: 150px;
+    margin-top: 10px;
+    margin-bottom: 10x;
+}
+
+.sect3content {
+    margin-top: 280px;
+    padding-left: 15px;
+    text-align: left;
     color: #ffffff;
-    margin-bottom: 280px;
-
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.nav-links a {
-    color: #d4cdbf
+.section3button {
+    text-align: center;
+    margin-top: 100px;
+    padding-right: 20px;
 }
 
-/* styling of the logo */
-.logo {
-    font-size: 32px;
+
+/*CSS layout for section 4 */
+.section4 {
+    height: 100vh;
+    width: 100vw;
+
+
+    /*Two column CSS layout */
+    display: grid;
+    grid:
+        "section2heading section2content" 1fr / 1fr 1fr;
+    gap: 8px;
+
+
+    background-image: url("../img/pub.png");
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-/*styling the menu */
-
-.menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
+.section4heading {
+    grid-area: section2heading;
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 200px;
+    margin-left: 100px;
+    color: #ffffff;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/*sudo class lists */
-.menu li:hover {
-    background-color: #bfbcbe;
+.section4content {
+    grid-area: section2content;
+    margin-top: 10px;
+    padding-right: 100px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #c7c7c7;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color: #52525284;
+    border: 20px;
     border-radius: 5px;
-    /*transition for hover of menu*/
-    transition: 0.3s, ease-in;
 }
 
-.menu li {
-    padding: 10px 40px;
+
+/* Section 5 styling */
+.section5 {
+    height: 50vh;
+    width: 100vw;
+
+    background-image: url("../img/castle2.png");
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-/*hiding checkbox */
-input[type=checkbox] {
-    display: none;
+.section5heading {
+    text-align: center;
+    margin-top: 10px;
+    color: #008000;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
+/* setting the grid of the four pictures setting */
+.sect5grid {
+    display: grid;
+    grid:
+        "sect5col1 sect5col2 sect5col3 sect5col4" 0.7fr / 1fr 1fr 1fr 1fr;
+    gap: 0px 20px;
 }
 
-/*responsive design using CSS queries */
-@media (max-width: 786px) {
-    .menu {
-        display: none;
-        position: absolute;
-        background-color: teal;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px;
-
-    }
-
-
-    .menu li:hover {
-        display: inline-block;
-        background-color: blanchedalmond;
-        transition: 0.3s, ease;
-
-    }
-
-    .menu li+li {
-        margin-top: 12px;
-    }
-
-    input[type=checkbox]:checked~.menu {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-}
-
-/* styling of footer and main content based off hero section design template */
-.page_footer {
-    color: #ffffff;
-    font-size: 18px;
-    background-color: rgba(144, 144, 150, 0.749);
-
-    border-radius: 10px;
-
-    padding-left: 10px;
-    padding-right: 10px;
-
-}
-
-.contactinfo {
+.sect5col1 {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    /* Black color for the circle */
+    border-radius: 50%;
+    /* Makes the background a circle */
     display: flex;
-    justify-content: space-between;
-    padding: 3px 30px;
+    justify-content: center;
+    align-items: center;
+
+    /*css box plot margin settings */
+    grid-area: sect5col1;
+    margin-top: 100px;
+    margin-left: 50px;
+
+
 }
 
-/* intro paragraph spacing */
-.intro {
-    text-align: justify;
+.sect5col2 {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    /* Black color for the circle */
+    border-radius: 50%;
+    /* Makes the background a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    padding-left: 10px;
-    padding-right: 10px;
+
+    /*css box plot margin settings */
+    grid-area: sect5col2;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+
+.sect5col3 {
+
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    /* Black color for the circle */
+    border-radius: 50%;
+    /* Makes the background a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*css box plot margin settings */
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+
+.sect5col4 {
+
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    /* Black color for the circle */
+    border-radius: 50%;
+    /* Makes the background a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 60px;
+
+
+}
+
+.sect5content {
+
+    text-align: center;
+    color: #ab9e0a;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.buttonContainer {
+
+    background-color: #00800087;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*displays all arrow pngs */
+.arrow-container {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*size of the arrow images */
+.arrow-image {
+    width: 60px;
+    height: 60px;
 }
