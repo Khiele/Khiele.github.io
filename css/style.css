@@ -63,12 +63,18 @@ h2 {
 .section2content {
     grid-area: section2content;
     margin-top: 10px;
-    padding-right: 100px;
     margin-bottom: 10px;
+    padding-right: 100px;
+    padding: 20px;
     text-align: left;
-    color: #047913;
+    color: #ffffff;
     font-size: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /*background to help contrast*/
+    background-color: #52525284;
+    border: 20px;
+    border-radius: 5px;
 }
 
 
@@ -164,6 +170,7 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*positioning of button section3 */
 .section3button {
     text-align: center;
     margin-top: 100px;
@@ -173,9 +180,9 @@ h2 {
 
 /*CSS layout for section 4 */
 .section4 {
+
     height: 100vh;
     width: 100vw;
-
 
     /*Two column CSS layout */
     display: grid;
@@ -214,6 +221,7 @@ h2 {
     font-size: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+    /*background to help contrast*/
     background-color: #52525284;
     border: 20px;
     border-radius: 5px;
@@ -330,10 +338,210 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*section 6 styling */
+.section6 {
 
+    height: 80vh;
+    width: 100vw;
+
+    background-image: url("../img/dark.png");
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    padding-top: 100px;
+}
+
+/*profile picture of Sean */
+.section6heading {
+
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/sean.png");
+    /* Makes the background a circle */
+    border-radius: 50%;
+
+    /*centered circle on page */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sect6content {
+    /*Display content centered */
+    display: flex;
+
+    /*centered content */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: white;
+
+    /*padding*/
+    padding-left: 350px;
+    padding-right: 350px;
+
+
+}
+
+/* section 7 styling */
+.section7 {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Equally spaced columns */
+    width: 100vw;
+    height: 55vh;
+
+    overflow: hidden;
+
+
+
+}
+
+/*create a parent class for each column and each image*/
+.image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.image:nth-child(1) {
+    background-image: url('../img/house.png');
+}
+
+.image:nth-child(2) {
+    background-image: url('../img/town.png');
+}
+
+.image:nth-child(3) {
+    background-image: url('../img/rock.png');
+}
+
+.image:nth-child(4) {
+    background-image: url('../img/castle3.png');
+}
+
+/*clickable arrow for image section*/
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.left-arrow {
+    left: 40px;
+    color: #ffffff;
+    font-size: 100px;
+    /*removes the underline from href */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-arrow {
+    right: 40px;
+    color: #ffffff;
+    font-size: larger;
+    font-size: 100px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*section 8 styling */
+.section8 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bridge.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+
+}
+
+.section8heading {
+    text-align: left;
+    padding-left: 70px;
+    font-size: 40px;
+}
+
+.section8content {
+    text-align: left;
+    padding-left: 60px;
+}
+
+
+.container {
+    background-color: #b47f7f83;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 200px;
+
+    /* Blue color for the left column */
+    color: #ffffff;
+    /* White text color */
+    text-align: center;
+    font-size: x-large;
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/*styling of input fields for user form */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #00000000;
+
+}
+
+/* White color for placeholder text */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #fff;
+}
+
+
+/*button styling for the user form */
+input[type="submit"] {
+    background-color: #00d977;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+/*button styling for section 2 and 3 */
 .buttonContainer {
 
-    background-color: #00800087;
+    background-color: #00d977;
     color: #ffffff;
     padding: 10px 20px;
     border: 10px;
@@ -342,7 +550,7 @@ h2 {
     cursor: pointer;
 }
 
-/*displays all arrow pngs */
+/*displays all down arrow pngs */
 .arrow-container {
     text-align: center;
     color: #ffffff;
