@@ -30,41 +30,40 @@ h2 {
 
 /*CSS layout for section 2 */
 .section2 {
-    height: 70vh;
+    height: auto;
+    /* Set height to auto to adjust based on content */
     width: 100vw;
+    display: flex;
+    /* Use flex to make the content within section 2 flexible */
 
-
-    /*Two column CSS layout */
-    display: grid;
-    grid:
-        "section2heading section2content" 1fr / 1fr 1fr;
-    gap: 8px;
-
-
+    /*background image properties */
     background-image: url("../img/lighthouse.png");
-    padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+
+    padding: 20px;
 }
 
 .section2heading {
-    grid-area: section2heading;
+    flex: 1;
+    /* Allow the heading to grow flexibly */
     text-align: left;
     margin-top: 10px;
-    margin-right: 200px;
-    margin-left: 100px;
+    margin-left: 30px;
+    /* Adjust margins as needed */
     color: #008000;
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .section2content {
-    grid-area: section2content;
+    flex: 2;
+    /* Allow the content to grow flexibly */
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-right: 100px;
+    margin-left: 150px;
     padding: 20px;
     text-align: left;
     color: #ffffff;
@@ -78,96 +77,83 @@ h2 {
 }
 
 
-
 /* Section 3 styling */
 .section3 {
     height: 100vh;
     width: 100vw;
-
     background-image: url("../img/flowers.png");
     padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+
+    /*center the grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section3heading {
     text-align: center;
     margin-top: 10px;
-    color: #008000;
+    color: #ffffff;
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* setting the grid of the three pictures setting */
+/* Setting the grid of the three pictures */
 .sect3grid {
     display: grid;
-    grid:
-        "sect3col1 sect3col2 sect3col3" 0.7fr / 1fr 1fr 1fr;
-    gap: 0px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Equally spaced columns */
+    gap: 20px;
+    /* Adjust the gap between pictures as needed */
+    justify-content: space-evenly;
+    /* Equally space the columns */
+    align-items: center;
+    /* Vertically center-align the grid */
 }
 
-.sect3col1 {
+.sect3col {
     width: 300px;
     height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    /*align text content to bottom */
+    align-items: flex-end;
 
+    /*position text content of each column to bottom left */
+    position: relative;
+}
+
+/* Add unique background images for each .sect3col */
+.sect3col:nth-child(1) {
     background-image: url("../img/test1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-position: center center;
-
-    /*css box plot margin settings */
-    grid-area: sect3col1;
-    margin-left: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
 }
 
-.sect3col2 {
-    width: 300px;
-    height: 400px;
-
+.sect3col:nth-child(2) {
     background-image: url("../img/aurora.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-
-    /*css box plot margin settings */
-    grid-area: sect3col2;
-    margin-left: 75px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-.sect3col3 {
-
-    width: 300px;
-    height: 400px;
-
-    grid-area: sect3col3;
+.sect3col:nth-child(3) {
     background-image: url("../img/city.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
-    /*css box plot margin settings */
-    margin-right: 150px;
-    margin-top: 10px;
-    margin-bottom: 10x;
 }
+
 
 .sect3content {
-    margin-top: 280px;
-    padding-left: 15px;
+    margin: 10px;
+    padding: 10px;
     text-align: left;
     color: #ffffff;
     font-size: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /*positioning of button section3 */
@@ -180,42 +166,40 @@ h2 {
 
 /*CSS layout for section 4 */
 .section4 {
-
-    height: 100vh;
+    /* Set height to auto to adjust based on content */
+    height: auto;
     width: 100vw;
+    /* Use flex to make the content within section 4 flexible */
+    display: flex;
 
-    /*Two column CSS layout */
-    display: grid;
-    grid:
-        "section2heading section2content" 1fr / 1fr 1fr;
-    gap: 8px;
-
-
+    /*background image properties */
     background-image: url("../img/pub.png");
-    padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+
+    padding: 20px;
 }
 
 .section4heading {
-    grid-area: section2heading;
+    /* Allow the heading to grow flexibly */
+    flex: 1;
     text-align: left;
+    /* Adjust margins as needed */
     margin-top: 10px;
-    margin-right: 200px;
-    margin-left: 100px;
+    margin-right: 20px;
+
     color: #ffffff;
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .section4content {
-    grid-area: section2content;
+    /* Allow the content to grow flexibly */
+    flex: 2;
     margin-top: 10px;
-    padding-right: 100px;
     padding: 20px;
-    margin-bottom: 10px;
     text-align: left;
     color: #c7c7c7;
     font-size: 1.5em;
@@ -227,12 +211,11 @@ h2 {
     border-radius: 5px;
 }
 
-
 /* Section 5 styling */
 .section5 {
+
     height: 50vh;
     width: 100vw;
-
     background-image: url("../img/castle2.png");
     padding: 20px;
     background-repeat: no-repeat;
@@ -252,12 +235,22 @@ h2 {
 /* setting the grid of the four pictures setting */
 .sect5grid {
     display: grid;
-    grid:
-        "sect5col1 sect5col2 sect5col3 sect5col4" 0.7fr / 1fr 1fr 1fr 1fr;
-    gap: 0px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    /* Equally spaced columns */
+    gap: 100px;
+    /* Adjust the gap between circles as needed */
+    justify-content: center;
+    /* Center-align the grid horizontally */
+    align-items: center;
+    /* Center-align the grid vertically */
+
+    /*center the grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.sect5col1 {
+.sect5col {
     width: 200px;
     height: 200px;
     background-color: #000000;
@@ -267,68 +260,18 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /*css box plot margin settings */
-    grid-area: sect5col1;
     margin-top: 100px;
+}
+
+/* Additional styling for individual circles (if needed) */
+.sect5col:nth-child(1) {
     margin-left: 50px;
-
-
 }
 
-.sect5col2 {
-    width: 200px;
-    height: 200px;
-    background-color: #000000;
-    /* Black color for the circle */
-    border-radius: 50%;
-    /* Makes the background a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    /*css box plot margin settings */
-    grid-area: sect5col2;
-    margin-top: 100px;
-    margin-left: 50px;
-
+.sect5col:nth-child(4) {
+    margin-right: 50px;
 }
 
-.sect5col3 {
-
-    width: 200px;
-    height: 200px;
-    background-color: #000000;
-    /* Black color for the circle */
-    border-radius: 50%;
-    /* Makes the background a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /*css box plot margin settings */
-    margin-top: 100px;
-    margin-left: 50px;
-
-}
-
-.sect5col4 {
-
-    width: 200px;
-    height: 200px;
-    background-color: #000000;
-    /* Black color for the circle */
-    border-radius: 50%;
-    /* Makes the background a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-left: 60px;
-
-
-}
 
 .sect5content {
 
@@ -338,56 +281,54 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/*section 6 styling */
+/* section 6 styling */
 .section6 {
-
     height: 80vh;
     width: 100vw;
-
     background-image: url("../img/dark.png");
     padding: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center content horizontally */
+
+    /* Ensure a maximum width for the section */
+    max-width: 1920px;
+    /* Adjust as needed */
+    margin: 0 auto;
+    /* Center the section horizontally */
 }
 
-/*profile picture of Sean */
+/* Profile picture of Sean */
 .section6heading {
-
     width: 200px;
     height: 200px;
     background-image: url("../img/sean.png");
     /* Makes the background a circle */
     border-radius: 50%;
-
-    /*centered circle on page */
-    margin: 0 auto;
+    /* Centered circle on page */
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .sect6content {
-    /*Display content centered */
-    display: flex;
-
-    /*centered content */
+    /* Centered content */
     text-align: center;
-    justify-content: center;
-    align-items: center;
     font-size: x-large;
     color: white;
-
-    /*padding*/
-    padding-left: 350px;
-    padding-right: 350px;
-
-
+    padding: 0 20px;
+    /* Adjust padding as needed for text content */
+    max-width: 800px;
+    /* Limit the width of the text content */
 }
+
 
 /* section 7 styling */
 .section7 {
@@ -400,6 +341,7 @@ h2 {
 
     overflow: hidden;
 
+    max-width: 1920px;
 
 
 }
