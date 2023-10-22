@@ -1,4 +1,4 @@
-/*offsetting the site with css box properties to hide whitespace */
+/*offsetting the site with css box properties to hide whitespace! */
 body {
 
     max-width: 100%;
@@ -7,7 +7,6 @@ body {
     margin-top: -5px;
     margin-bottom: -2px;
 }
-
 
 /*styling of all h2 headers */
 h2 {
@@ -487,7 +486,25 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+/*social media icon styling */
+.social-media-icons {
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+    display: flex;
+}
 
+.social-media-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-media-icons img {
+    width: 30px;
+    /* Adjust the size as needed */
+    height: 30px;
+    /* Adjust the size as needed */
+}
 
 /*button styling for section 2 and 3 */
 .buttonContainer {
@@ -511,6 +528,6 @@ input[type="submit"] {
 
 /*size of the arrow images */
 .arrow-image {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
