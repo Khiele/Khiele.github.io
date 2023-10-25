@@ -5,260 +5,46 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="" viewport" content="" width=device-width, initial-scale="1.0">
-    <title>Kyle Unger</title>
+    <title>InClassAssignment2</title>
     <!--link to favicon-->
     <link rel="shortcut icon" href="img/bearfav.png" type="image/x-icon">
 
-    <!--CSS libraries / files-->
-    <!-- JS libraries/files-->
+    <!--link toi style sheet for site-->
+    <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
-    <header id="page_header">
-
-        <!--CSS file link-->
-        <link rel="stylesheet" href="css/style.css" />
-
-    </header>
-
-    <!--Title Page-->
-    <section id="titlePage" class="titlePage">
-        <div class="section1heading">
-            <h1>IRELAND</h1>
+    <div class="page_container">
+        <div class="header1">
+            Welcome to the Interactive ABC's of CSS Technology Learning Website
         </div>
-        <h2>Tour and Travel</h2>
-        <div class="arrow-container">
-            <a href="#scroll-down" class="arrowtitle-link"><img src="img/arrow.png" class="arrow-image"> </a>
+        <div class="header2">
+            Clock on the buttons below to reveal and learn the CSS technology features
+            of the corresponding letters
         </div>
-
-    </section>
-
-    <!--Section 2-->
-    <section id="section2" class="section2">
-        <!--section 2 heading-->
-        <div class="section2heading">
-            <h1>Is a trip to Ireland on your list?</h1>
-        </div>
-        <!--section 2 content-->
-        <div class="section2content">
-            <content>
-                Welcome to an enchanting journey to the heart of Ireland, where rolling green hills, historic castles,
-                and warm Irish hospitality await your arrival. Our travel agency is thrilled to present an extraordinary
-                opportunity for you to experience the beauty and culture of the Emerald Isle like never before. Whether
-                you're a history enthusiast, a nature lover, or simply looking to immerse yourself in the vibrant Irish
-                atmosphere, our Ireland Adventure tour has something for everyone.
-            </content>
-            <br>
-            <br>
-            <content>
-                This all-inclusive package offers you the chance to traverse the lush landscapes of the Irish
-                countryside, visit iconic landmarks such as the Blarney Castle, and savor traditional Irish cuisine at
-                cozy pubs. With our experienced guides leading the way, you'll uncover the rich history and legends that
-                make Ireland truly unique. Don't miss your chance to create memories that will last a lifetime; book
-                your spot on our Ireland Adventure today and set off on a remarkable journey through the charming and
-                captivating land of Ireland!
-            </content>
-            <br>
-            <br>
-            <!--Button for read more-->
-            <a href="more-content.html">
-                <button class="buttonContainer">Read More</button>
-            </a>
-        </div>
-
-    </section>
-    <!--Section 3 structuring-->
-    <div class="section3">
-        <section>
-            <div class="section3heading">
-                <h1>Experience the Emerald Isle & Sean The Leprechaun</h1>
+        <div class="img_container">
+            <div class="img1_box">
+                <img class="img1" src="img/css-letter-a.png" alt="css-letter-a" />
+                <input type="button" class="hide_img1" value="Hide Result" onclick="hideImg1()" />
             </div>
-            <div class="sect3grid">
-                <div class="sect3col">
-                    <div class="sect3content">
-                        <content>
-                            <p>Amazing cliffs</p>
-                            <a href="#scroll-down" class="arrow-link"><img src="img/arrow.png" class="arrow-image">
-                            </a>
-                        </content>
-                    </div>
-                </div>
-                <div class="sect3col">
-                    <div class="sect3content">
-                        <content>
-                            <p>Stunning Aurora Borealis</p>
-                            <a href="#scroll-down" class="arrow-link"><img src="img/arrow.png" class="arrow-image">
-                            </a>
-                        </content>
-                    </div>
-                </div>
-                <div class="sect3col">
-                    <div class="sect3content">
-                        <content>
-                            <p>A city or somethin</p>
-                            <a href="#scroll-down" class="arrow-link"><img src="img/arrow.png" class="arrow-image">
-                            </a>
-                        </content>
-                    </div>
-                </div>
+            <div class="img2_container">
+                <img class="img2" src="img/css-letter-b.png" alt="css-letter-b" />
+                <input type="button" class="hide_img2" value="Hide Result" onclick="hideImg2()" />
             </div>
-            <!--Button for read more-->
-            <div class="section3button">
-                <a href="more-content.html">
-                    <button class="buttonContainer">Read More</button>
-                </a>
+            <div class="img3_container">
+                <img class="img3" src="img/css-letter-c.png" alt="css-letter-c" />
+                <input type="button" class="hide_img3" value="Hide Result" onclick="hideImg3()" />
             </div>
-        </section>
+        </div>
+        <div class="button_containter">
+            <input type="button" class="buttonA" value="A" onclick="showImg1()" />
+            <input type="button" class="buttonB" value="B" onclick="showImg2()" />
+            <input type="button" class="buttonC" value="C" onclick="showImg3()" />
+        </div>
+        <!--calling javascript-->
+        <script src="./script.js"></script>
     </div>
-    <!--section 4 strucuring-->
-    <section id="section4" class="section4">
-        <!--section 4 heading-->
-        <div class="section4heading">
-            <h1>Leprechauns, Rainbows, Pots of Gold, Pints of Beer</h1>
-        </div>
-        <!--section 4 content-->
-        <div class="section4content">
-            <content>
-                Irish pubs exude a captivating charm that occasionally incorporates leprechaun folklore into their
-                decor
-                and ambiance. While leprechauns are mythical, these playful figures add a whimsical touch, with
-                figurines, artwork, or even staff dressed as these legendary beings. The pubs' lively atmosphere,
-                rich
-                culture, and hearty fare create a unique and enjoyable experience for visitors. So, revel in the
-                Irish
-                hospitality, good company, and the enchanting spirit of these delightful establishments
-            </content>
-            <br>
-            <h3>What to do if a leprechaun sees you</h3>
-            <br>
-            <content>
-                If you ever find yourself face to face with a leprechaun, Irish folklore suggests a simple and
-                light-hearted solution: offer the mischievous sprite a beer. Leprechauns are known to have a fondness
-                for the brew, and sharing a pint can turn a potentially tricky encounter into a friendly one.
-            </content>
-            <br>
-            <h3>Reservations</h3>
-            <br>
-            <content>
-                For inquiries or reservations at our Irish pub, please feel free to contact us at +1 (123) 456-7890 or
-                via email at info@irishpubexample.com. We look forward to welcoming you to our charming establishment
-                and helping you have a delightful experience. Sláinte!
-            </content>
-        </div>
-    </section>
-    <!--Section 5 structuring-->
-    <div class="section5">
-        <section>
-            <div class="sect5grid">
-                <div class="sect5col">
-                    <div class="sect5content">
-                        <content>
-                            <h3>300</h3>
-                            <p>Hotels To Stay</p>
-                        </content>
-                    </div>
-                </div>
-                <div class="sect5col">
-                    <div class="sect5content">
-                        <content>
-                            <h3>420</h3>
-                            <p>Places To Visit</p>
-                        </content>
-                    </div>
-                </div>
-                <div class="sect5col">
-                    <div class="sect5content">
-                        <content>
-                            <h3>900</h3>
-                            <p>Repeat Visitors</p>
-                        </content>
-                    </div>
-                </div>
-                <div class="sect5col">
-                    <div class="sect5content">
-                        <content>
-                            <h3>97%</h3>
-                            <p>Safe & Secure</p>
-                        </content>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!--section 6-->
-    <!--Title Page-->
-    <section id="section6" class="section6">
-        <div class="section6heading">
-        </div>
-        <div class="sect6content">
-            <content>
-                <p>My visit to Ireland was an unforgettable adventure filled with breathtaking landscapes, lively pubs,
-                    and warm encounters with locals. From the iconic Cliffs of Moher to the cozy streets of Dublin, I
-                    immersed myself in the rich culture and embraced the captivating charm of the Emerald Isle. My
-                    experience in Ireland left me with lasting memories and a deep appreciation for the beauty and
-                    hospitality of this remarkable country.</p>
-                <br>
-                <p>Sean Mcglocklin
-                <p>
-            </content>
-        </div>
-        <div class="arrow-container">
-            <a href="#scroll-down" class="arrowtitle-link"><img src="img/arrow.png" class="arrow-image"> </a>
-        </div>
-    </section>
-
-    <!--section 7-->
-    <section class="section7">
-
-        <div class="image">
-            <a href="#" class="arrow left-arrow">&lt;</a>
-        </div>
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image">
-            <a href="#" class="arrow right-arrow">&gt;</a>
-        </div>
-
-    </section>
-    <!--section 8-->
-    <section class="section8">
-        <div class="container">
-            <div class="left-column">
-                <div class="section8heading">
-                    <h1>Contact Us</h1>
-                </div>
-                <div class="section8content">
-                    <p>Toll free: 800-999-9999</p>
-                    <p>Dublin: 900-888-8888</p>
-                    <p>Fax: 700-666-6666</p>
-                    <p>Email: irishpubexample@email.com</p>
-                </div>
-                <div class="social-media-icons">
-                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="img/snapchat.png" alt="Snapchat"></a>
-                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-                </div>
-
-            </div>
-            <div class="right-column">
-                <!--personal user information form-->
-                <form action="#" method="post">
-                    <input type="text" id="name" name="name" placeholder="name" required>
-                    <input type="email" id="email" name="email" placeholder="email" required>
-                    <textarea id="message" name="message" rows="5" placeholder="message" required></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    </section>
-
-
-
-    <footer id="page_footer" class="page_footer">
-
-
-
-
-    </footer>
 </body>
+
+</html>

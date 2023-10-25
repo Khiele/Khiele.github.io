@@ -1,533 +1,240 @@
-/*offsetting the site with css box properties to hide whitespace! */
+/*setting body defaults */
 body {
 
-    max-width: 100%;
-    margin-left: -5px;
-    margin-right: -2px;
-    margin-top: -5px;
-    margin-bottom: -2px;
-}
-
-/*styling of all h2 headers */
-h2 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 4em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*CSS for section one */
-.titlePage {
-
-    height: 100vh;
-    width: 100vw;
-
-    background-image: url("../img/irelandHome.png");
-    padding: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-.section1heading {
-    text-align: center;
-    margin-top: 20%;
-    color: #008000;
-    font-size: 6em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*CSS layout for section 2 */
-.section2 {
-    height: auto;
-    /* Set height to auto to adjust based on content */
-    width: 100vw;
-    display: flex;
-    /* Use flex to make the content within section 2 flexible */
-
-    /*background image properties */
-    background-image: url("../img/lighthouse.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-
-    padding: 20px;
-}
-
-.section2heading {
-    flex: 1;
-    /* Allow the heading to grow flexibly */
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 30px;
-    /* Adjust margins as needed */
-    color: #008000;
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.section2content {
-    flex: 2;
-    /* Allow the content to grow flexibly */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 150px;
-    padding: 20px;
-    text-align: left;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    /*background to help contrast*/
-    background-color: #52525284;
-    border: 20px;
-    border-radius: 5px;
-}
-
-
-/* Section 3 styling */
-.section3 {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../img/flowers.png");
-    padding: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-
-    /*center the grid */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section3heading {
-    text-align: center;
-    margin-top: 10px;
-    color: #ffffff;
-    font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Setting the grid of the three pictures */
-.sect3grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Equally spaced columns */
-    gap: 20px;
-    /* Adjust the gap between pictures as needed */
-    justify-content: space-evenly;
-    /* Equally space the columns */
-    align-items: center;
-    /* Vertically center-align the grid */
-}
-
-.sect3col {
-    width: 300px;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    /*align text content to bottom */
-    align-items: flex-end;
-
-    /*position text content of each column to bottom left */
-    position: relative;
-}
-
-/* Add unique background images for each .sect3col */
-.sect3col:nth-child(1) {
-    background-image: url("../img/test1.jpg");
-}
-
-.sect3col:nth-child(2) {
-    background-image: url("../img/aurora.png");
-}
-
-.sect3col:nth-child(3) {
-    background-image: url("../img/city.png");
-}
-
-
-.sect3content {
-    margin: 10px;
-    padding: 10px;
-    text-align: left;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-/*positioning of button section3 */
-.section3button {
-    text-align: center;
-    margin-top: 100px;
-    padding-right: 20px;
-}
-
-
-/*CSS layout for section 4 */
-.section4 {
-    /* Set height to auto to adjust based on content */
-    height: auto;
-    width: 100vw;
-    /* Use flex to make the content within section 4 flexible */
-    display: flex;
-
-    /*background image properties */
-    background-image: url("../img/pub.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-
-    padding: 20px;
-}
-
-.section4heading {
-    /* Allow the heading to grow flexibly */
-    flex: 1;
-    text-align: left;
-    /* Adjust margins as needed */
-    margin-top: 10px;
-    margin-right: 20px;
-
-    color: #ffffff;
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.section4content {
-    /* Allow the content to grow flexibly */
-    flex: 2;
-    margin-top: 10px;
-    padding: 20px;
-    text-align: left;
-    color: #c7c7c7;
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    /*background to help contrast*/
-    background-color: #52525284;
-    border: 20px;
-    border-radius: 5px;
-}
-
-/* Section 5 styling */
-.section5 {
-
-    height: 50vh;
-    width: 100vw;
-    background-image: url("../img/castle2.png");
-    padding: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-.section5heading {
-    text-align: center;
-    margin-top: 10px;
-    color: #008000;
-    font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* setting the grid of the four pictures setting */
-.sect5grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* Equally spaced columns */
-    gap: 100px;
-    /* Adjust the gap between circles as needed */
-    justify-content: center;
-    /* Center-align the grid horizontally */
-    align-items: center;
-    /* Center-align the grid vertically */
-
-    /*center the grid */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sect5col {
-    width: 200px;
-    height: 200px;
-    background-color: #000000;
-    /* Black color for the circle */
-    border-radius: 50%;
-    /* Makes the background a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-/* Additional styling for individual circles (if needed) */
-.sect5col:nth-child(1) {
-    margin-left: 50px;
-}
-
-.sect5col:nth-child(4) {
-    margin-right: 50px;
-}
-
-
-.sect5content {
-
-    text-align: center;
-    color: #ab9e0a;
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* section 6 styling */
-.section6 {
-    height: 80vh;
-    width: 100vw;
-    background-image: url("../img/dark.png");
-    padding: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    /* Stack content vertically */
-    align-items: center;
-    /* Center content horizontally */
-
-    /* Ensure a maximum width for the section */
-    max-width: 1920px;
-    /* Adjust as needed */
-    margin: 0 auto;
-    /* Center the section horizontally */
-}
-
-/* Profile picture of Sean */
-.section6heading {
-    width: 200px;
-    height: 200px;
-    background-image: url("../img/sean.png");
-    /* Makes the background a circle */
-    border-radius: 50%;
-    /* Centered circle on page */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sect6content {
-    /* Centered content */
-    text-align: center;
-    font-size: x-large;
-    color: white;
-    padding: 0 20px;
-    /* Adjust padding as needed for text content */
-    max-width: 800px;
-    /* Limit the width of the text content */
-}
-
-
-/* section 7 styling */
-.section7 {
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    /*offset slight bc for some reason wouldnt fill page */
-    width: 102.6vw;
-    height: 55vh;
-
-    overflow: hidden;
-
-}
-
-/*create a parent class for each column and each image*/
-.image {
-    background-size: cover;
-    background-position: center;
-    position: relative;
-
-}
-
-.image:nth-child(1) {
-    background-image: url('../img/house.png');
-}
-
-.image:nth-child(2) {
-    background-image: url('../img/town.png');
-}
-
-.image:nth-child(3) {
-    background-image: url('../img/rock.png');
-}
-
-.image:nth-child(4) {
-    background-image: url('../img/castle3.png');
-}
-
-/*clickable arrow for image section*/
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.left-arrow {
-    left: 40px;
-    color: #ffffff;
-    font-size: 100px;
-    /*removes the underline from href */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.right-arrow {
-    right: 40px;
-    color: #ffffff;
-    font-size: larger;
-    font-size: 100px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/*section 8 styling */
-.section8 {
-    font-family: Arial, sans-serif;
+    /*default site spacing */
     margin: 0;
     padding: 0;
-    background-image: url("../img/bridge.png");
+}
+
+/*page container for border across entire page */
+.page_container {
+    padding: 2px;
+    padding-top: 10px;
+    padding-right: 15px;
+
+    border: 3px solid gold;
+
+}
+
+/*Main Header */
+.header1 {
     display: flex;
+
+    width: 98vw;
+    height: 10vh;
+
+    outline-style: solid;
+    outline-color: gold;
+
+
+    /*site spacing */
+    margin-left: .7vw;
+
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 102.6vw;
 
+    font-size: 1.8em;
 }
 
-.section8heading {
-    text-align: left;
-    padding-left: 70px;
-    font-size: 40px;
-}
-
-.section8content {
-    text-align: left;
-    padding-left: 60px;
-}
-
-
-.container {
-    background-color: #b47f7f83;
-    padding: 10px;
-    border-radius: 5px;
+/*Subheader */
+.header2 {
     display: flex;
-}
 
-.left-column {
-    flex: 1;
-    padding-right: 200px;
+    width: 98vw;
+    height: 10vh;
 
-    /* Blue color for the left column */
-    color: #ffffff;
-    /* White text color */
-    text-align: center;
-    font-size: x-large;
-}
+    outline-style: solid;
+    outline-color: gold;
 
-.right-column {
-    flex: 1;
-    padding: 20px;
-    color: #ffffff;
-}
+    /*site spacing */
+    margin-left: .7vw;
+    margin-top: 2vw;
 
-/*styling of input fields for user form */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    background-color: #00000000;
+    justify-content: center;
+    align-items: center;
 
-}
-
-/* White color for placeholder text */
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-textarea::placeholder {
-    color: #fff;
+    font-size: 1.8em;
 }
 
 
-/*button styling for the user form */
-input[type="submit"] {
-    background-color: #00d977;
-    color: #ffffff;
+/*image stylings */
+.img_container {
+    display: flex;
+
+    height: 60vh;
+    width: 100vw;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.img1_container {
+    display: block;
+
+    width: 28vw;
+    height: 60vh;
+}
+
+.img1 {
+    display: flex;
+
+    height: 45vh;
+    margin-top: 0px;
+    margin-left: 3.5vw;
+
+    /*default hidden */
+    visibility: hidden;
+}
+
+.hide_img1 {
+    display: flex;
+    width: 20vw;
+    height: 5vh;
+
+    /* Center horizontally and add some top margin */
+    margin: 2vh auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+    color: white;
+    background-color: rgb(29, 188, 240);
+
+    visibility: hidden;
+}
+
+.img2_container {
+    display: block;
+
+    width: 28vw;
+    height: 60vh;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.img2 {
+    display: flex;
+
+    height: 45vh;
+    margin-top: 26px;
+    margin-left: 3.5vw;
+
+    /*default hidden */
+    visibility: hidden;
+}
+
+.hide_img2 {
+    display: flex;
+    width: 20vw;
+    height: 5vh;
+
+    /* Center horizontally and add some top margin */
+    margin: 2vh auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+    color: white;
+    background-color: rgb(29, 188, 240);
+
+    visibility: hidden;
+}
+
+.img3_container {
+    display: block;
+
+    width: 28vw;
+    height: 60vh;
+}
+
+.img3 {
+    display: flex;
+
+    height: 45vh;
+    margin-top: 26px;
+    margin-left: 3.5vw;
+
+    /*default hidden */
+    visibility: hidden;
+}
+
+.hide_img3 {
+    display: flex;
+
+    width: 20vw;
+    height: 5vh;
+
+    /* Center horizontally and add some top margin */
+    margin: 2vh auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+    color: white;
+    background-color: rgb(29, 188, 240);
+
+    visibility: hidden;
+}
+
+/*button stylings */
+.buttonA {
+    display: flex;
+
+    width: 15vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+
     border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
+    outline-style: solid;
+    outline-color: gold;
+    background-color: white;
 }
 
-/*social media icon styling */
-.social-media-icons {
-    position: relative;
-    bottom: 20px;
-    left: 60px;
+.buttonB {
     display: flex;
+
+    width: 15vw;
+    height: 8vh;
+
+    margin-left: 18vw;
+    margin-right: 18vw;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+
+    border: none;
+    outline-style: solid;
+    outline-color: gold;
+    background-color: white;
 }
 
-.social-media-icons a {
-    margin-right: 10px;
-    text-decoration: none;
+.buttonC {
+    display: flex;
+
+    width: 15vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+
+    border: none;
+    outline-style: solid;
+    outline-color: gold;
+    background-color: white;
 }
 
-.social-media-icons img {
-    width: 30px;
-    /* Adjust the size as needed */
-    height: 30px;
-    /* Adjust the size as needed */
-}
+.button_containter {
+    display: flex;
 
-/*button styling for section 2 and 3 */
-.buttonContainer {
+    width: 100vw;
+    height: 10vh;
 
-    background-color: #00d977;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-/*displays all down arrow pngs */
-.arrow-container {
-    text-align: center;
-    color: #ffffff;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*size of the arrow images */
-.arrow-image {
-    width: 70px;
-    height: 70px;
+    justify-content: center;
+    align-items: center;
 }
