@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/kyleu/OneDrive/Desktop/Repos/Khiele.github.io/index.html",
+            "url": "file:///C:/Users/kyleu/OneDrive/Desktop/Repos/khiele.github.io/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
